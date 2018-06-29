@@ -1,3 +1,4 @@
+
 import { CoreModule } from './core/core.module';
 import { RestaurantModule } from './restaurant/restaurant.module';
 import { AppRoutingModule } from './app.routes';
@@ -8,6 +9,7 @@ import { HeaderModule } from './header/header.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component'
@@ -28,7 +30,9 @@ import { AppComponent } from './app.component'
     HomeModule,
     AboutModule,
     RestaurantModule,
-    CoreModule
+    CoreModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
