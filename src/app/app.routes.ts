@@ -1,3 +1,4 @@
+import { RestaurantDetailComponent } from './restaurant/restaurant-detail/restaurant-detail.component';
 import { AboutComponent } from './about/about/about.component';
 import { HomeComponent } from './home/home/home.component';
 import { NgModule } from '@angular/core';
@@ -9,6 +10,7 @@ import { RestaurantsComponent } from './restaurant/restaurants/restaurants.compo
 const ROUTES: Routes = [
   { path: '', component: HomeComponent },
   { path: 'restaurants', component: RestaurantsComponent },
+  { path: 'restaurants/:id', component: RestaurantDetailComponent },
   { path: 'about', component: AboutComponent }
 ];
 

@@ -5,5 +5,7 @@ export interface Restaurant {
   category: string
   deliveryEstimate: string
   rating: number
+  hours?: string
+  about?: string
 
 }
